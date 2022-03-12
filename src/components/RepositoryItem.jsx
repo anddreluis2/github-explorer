@@ -4,10 +4,10 @@ export function RepostoryItem(props) {
     return (
         <li>
             <strong>
-                {props.repository?.name ?? 'Default'}
+                {props.repository?.name}
             </strong>
-            <p>{props.repository?.description ?? 'Forms in Reacttt'}</p>
-            <a href={props.repository?.link ?? 'https//github.com/unform/unform'}>
+            <p>{props.repository?.description}</p>
+            <a href={props.repository?.html_url ?? 'https//github.com/unform/unform'}>
                 Acessar repositório
             </a>
         </li>
