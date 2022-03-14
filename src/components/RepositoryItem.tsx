@@ -1,6 +1,14 @@
 import { permittedCrossDomainPolicies } from "helmet";
 
-export function RepostoryItem(props) {
+interface RepositoryItemProps {
+    repository: {
+        name: string,
+        description: string,
+        html_url: string,
+    }
+}
+
+export function RepostoryItem(props: RepositoryItemProps) {
     return (
         <li>
             <strong>
